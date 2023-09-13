@@ -24,4 +24,10 @@ fieldset {
 	border: 1px solid #e0b0ff30;
 }
 
+hr {
+    height:1px;
+    border-width:0;
+    background-color:#e0b0ff30;
+}
+
 body { margin:0 auto; max-width: 440px; } 
