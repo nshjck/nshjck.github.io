@@ -16,14 +16,6 @@ p {
     margin-left: 4px;
 }
 
-fieldset {
-	border: 1px solid #e0b0ff30;
-}
-
-legend {
-    font-weight: bold;
-}
-
 hr {
     height: 1px;
     border: 0px;
@@ -52,6 +44,7 @@ fieldset {
     padding-bottom: 8px;
     padding-left: 8px;
 	margin-top: 16px;
+    border: 1px solid #e0b0ff30;
 }
 
 *::-webkit-scrollbar{ 
