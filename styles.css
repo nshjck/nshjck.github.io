@@ -32,6 +32,10 @@ p a {
 	color:#9e4ef5;
 }
 
+p a:hover {
+    color:#d791ff;
+  }
+
 .buttons {
     display: flex;
     flex-wrap: wrap;
