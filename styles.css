@@ -12,6 +12,10 @@ p {
     padding: 0px 2px;
 }
 
+fieldset p {
+    padding-top: 1px;
+}
+
 .title {
     margin-left: 4px;
 }
@@ -45,6 +49,10 @@ fieldset {
     padding-left: 8px;
 	margin-top: 16px;
     border: 1px solid #e0b0ff30;
+}
+
+footer {
+    margin-bottom: 100px;
 }
 
 *::-webkit-scrollbar{ 
