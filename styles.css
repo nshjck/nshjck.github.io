@@ -1,9 +1,10 @@
 body {
     margin: 0 auto;
-    max-width: 420px;
+    max-width: 440px;
     color:plum;
     background-color: black;
     font-family: monospace;
+    font-size: 14px;
     image-rendering: pixelated;
     padding: 0px 2px;
 }
