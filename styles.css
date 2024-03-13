@@ -7,6 +7,7 @@ body {
     font-size: 14px;
     image-rendering: pixelated;
     padding: 0px 2px;
+    margin-bottom: 100px;
 }
 
 p {
@@ -28,9 +29,9 @@ hr {
 }
 
 p a {
-	text-decoration: none;
-	font-weight:bold;
-	color:#9e4ef5;
+    text-decoration: none;
+    font-weight:bold;
+    color:#9e4ef5;
 }
 
 p a:hover {
@@ -45,19 +46,13 @@ p a:hover {
 }
 
 .buttons img {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 fieldset {
-	padding: 0 1ch;
-    padding-bottom: 8px;
-    padding-left: 8px;
-	margin-top: 16px;
+    padding: 0 1ch 8px 1ch;
+    margin-top: 16px;
     border: 1px solid #e0b0ff30;
-}
-
-footer {
-    margin-bottom: 100px;
 }
 
 *::-webkit-scrollbar{ 
