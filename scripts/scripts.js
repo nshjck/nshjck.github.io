@@ -1,5 +1,5 @@
 import data from './posts.json' assert { type: 'json' };
-
+console.log(data);
 
 let strData = data.toString();
 const para = document.createElement("p");
