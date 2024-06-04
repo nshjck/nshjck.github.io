@@ -1,3 +1,5 @@
 ## NobodySpecial
 
-uh this is my readme file i guess, not sure what to write here
+enjoy my website :3
+
+https://www.ns57.github.io
