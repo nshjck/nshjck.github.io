@@ -1,5 +1,7 @@
 import data from './posts.json' assert { type: 'json' };
-
+const sample = require('./posts.json');
+console.log(sample);
+console.log(sample.posts);
 console.log(data.posts);
 for (let x in data.posts) {
    console.log(x.name)
