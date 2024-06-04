@@ -1,11 +1,6 @@
 import data from './posts.json' assert { type: 'json' };
-let strData = data.toString();
-data = JSON.parse(strData);
+
 console.log(data);
-data.forEach(myFunction);
-function myFunction(value) {
-  console.log(value);
-}
 
 const para = document.createElement("p");
 const node = document.createTextNode('gorp');
