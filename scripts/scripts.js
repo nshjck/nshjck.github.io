@@ -2,7 +2,8 @@ import data from './posts.json' assert { type: 'json' };
 
 console.log(data.posts);
 for (let x in data.posts) {
-   console.log(x)
+   console.log(x.name)
+   console.log(x.date)
 }
 const para = document.createElement("p");
 const node = document.createTextNode('gorp');
