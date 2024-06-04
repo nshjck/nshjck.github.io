@@ -1,4 +1,5 @@
 import data from './posts.json' assert { type: 'json' };
+const data = data;
 console.log(data);
 data.forEach(myFunction);
 function myFunction(value) {
