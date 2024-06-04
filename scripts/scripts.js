@@ -1,5 +1,9 @@
 import data from './posts.json' assert { type: 'json' };
 console.log(data);
+data.forEach(myFunction);
+function myFunction(value) {
+  console.log(value);
+}
 
 let strData = data.toString();
 const para = document.createElement("p");
