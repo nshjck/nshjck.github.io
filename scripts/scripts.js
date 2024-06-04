@@ -1,7 +1,7 @@
 import data from './posts.json' assert { type: 'json' };
 
 console.log(data);
-for (let x in data) {
+for (let x in data.posts) {
    console.log(x)
 }
 const para = document.createElement("p");
