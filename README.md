@@ -2,4 +2,4 @@
 
 enjoy my website :3
 
-https://www.ns57.github.io
+https://ns57.github.io
