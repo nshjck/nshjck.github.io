@@ -7,7 +7,6 @@ function myFunction(value) {
   console.log(value);
 }
 
-let strData = data.toString();
 const para = document.createElement("p");
 const node = document.createTextNode('gorp');
 para.appendChild(node);
