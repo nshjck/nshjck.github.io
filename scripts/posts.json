@@ -1,5 +1,14 @@
 {
-    "name": "NS",
-    "date": "26/04/24",
-    "content": "TEST POST"
+    "posts": [
+        {
+            "name": "NS",
+            "date": "26/04/24",
+            "content": "TEST POST"
+        },
+        {
+            "name": "G",
+            "date": "26/04/24",
+            "content": "TeEST POST"
+        }
+    ]
 }
