@@ -59,3 +59,10 @@ fieldset {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.anchor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0
+}
