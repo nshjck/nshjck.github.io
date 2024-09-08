@@ -12,8 +12,8 @@ main {
     margin: 0 auto;
     max-width: 440px;
     color:plum;
-    font-family: monospace;
-    font-size: 14px;
+    font-family: MS UI Gothic, monospace;
+    font-size: 16px;
     padding: 0px 6px;
     margin-bottom: 100px;   
 }
