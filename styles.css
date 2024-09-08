@@ -1,4 +1,6 @@
 * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     image-rendering: pixelated;
 }
 
@@ -10,7 +12,6 @@ main {
     margin: 0 auto;
     max-width: 440px;
     color:plum;
-    background-color: black;
     font-family: monospace;
     font-size: 14px;
     padding: 0px 6px;
@@ -61,11 +62,6 @@ fieldset {
 *::-webkit-scrollbar{ 
     display: none;
   }
-
-* {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
 .anchor {
     position: fixed;
