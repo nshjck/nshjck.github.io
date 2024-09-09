@@ -4,6 +4,8 @@ support new browsers. You are allowed to modify and distribute this
 script without the owner's approval, although it is necessary to keep
 this copyright intact and append modifications you made below this
 comment. You can append anything below this statement.
+
+BISEXUAL... RAIN... BISEXUAL.... RAIN....
 */
 
 var colours = ['#D60270', '#9B4F96', '#0038A8']
@@ -17,7 +19,6 @@ function newStar() {
     stars.push({
         x: Math.floor(Math.random()*canvas.width),
         y: 0,
-        dir:1.55
     });
     stars = stars.filter(function(x) {
         return x.x < canvas.width * 2 || x.y < canvas.height * 2;
@@ -28,14 +29,13 @@ function draw() {
     context.fillRect(0, 0, canvas.width, canvas.height);
     for (var index = 0; index < stars.length; index++) {
         var star = stars[index];
-        star.x += Math.cos(star.dir) * 6;
-        star.y += Math.sin(star.dir) * 6;
+        star.y += 6;
         context.fillStyle = colours[Math.floor(Math.random()*colours.length)];
         context.fillRect(Math.round(star.x / 2) * 2, Math.round(star.y / 2) * 2, 2, 2);
     }
 }
 
-setInterval(newStar, 10);
+setInterval(newStar, 8);
 document.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -46,7 +46,7 @@ document.onscroll = function () {
     canvas.style.transform = `translateY(${scrollPos}px)`;
 };
 
-setInterval(draw, 10);
+setInterval(draw, 9);
 context.fillStyle = 'black';
 context.fillRect(0, 0, canvas.width, canvas.height);
 for (var index = 0; index < 100; index++) {
