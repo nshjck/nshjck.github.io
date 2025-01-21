@@ -8,21 +8,21 @@
     </head>  
     
     <body>
-        <script>
-            console.log(screen.width);
-            if (screen.width > 700) {
-                document.location = '../';
-            }
-        </script>
+        <script src='../scripts/cursor.js'></script> 
+        <canvas id='background'></canvas>
 
         <main id='main'>
             <center><h1>NobodySpecial</h1></center>
 
-            <p><i>this site looks better on desktop</i></p>
+            <nav>
+                <a href='#about'>About</a>
+                <a href='#links'>Links</a>
+                <a href='#buttons'>Buttons</a>
+            </nav>
 
             <p>hai, welcome to my little corner of the internet. im currently revamping this page at the moment so stuff might change from time to time</p>
 
-            <h3 class='title'>About</h3>
+            <h3 id ='about' class='title'>About</h3>
             
             <p>hai my name is Jack and im from the UK. im 18 and pretty into computers. i go by they/them :3</p>
 
@@ -47,13 +47,15 @@
                 <p><a href='https://hotlinewebring.club/nobodyspecial/previous'>&lt;--</a> | <a href='https://hotlinewebring.club/'>join</a> | <a href='https://hotlinewebring.club/nobodyspecial/next'>--&gt;</a></p>
             </div>
 
-            <h3 class='title'>Links</h3>
+            <h3 id='links' class='title'>Links</h3>
 
             <p>uhh not rly gonna put much here but</p>
 
             <p style='margin-bottom: 0;'>u can view my pronouns page <a href='https://en.pronouns.page/@nshjck' target='_blank'>here</a></p>
 
-            <h3 class='title'>Buttons</h3>
+            <p style='margin-bottom: 0;'>or sign my guest book <a href='https://en.pronouns.page/@nshjck' target='_blank'>here</a> (ignore the formatting) </p>
+
+            <h3 id='buttons' class='title'>Buttons</h3>
                 
             <p>i have my own button now (i suck at art)</p>
             <div class='buttons'>
@@ -91,7 +93,7 @@
             <br>
             <hr>   
 
-            <p>last edited: 23-10-2024 22:35 BST</p>
+            <p>last edited: 21-01-2025 16:46 BST</p>
 
             <p>view this pages license <a href='../LICENSE.txt' target='_blank'>here</a></p>
 
@@ -99,5 +101,7 @@
 
             <p class='anchor' id=':3'>:3</p>
         </main>
+
+        <script src='../scripts/background.js'></script>
     </body>
 </html>

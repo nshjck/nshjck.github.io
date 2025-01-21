@@ -168,11 +168,13 @@ var cursoreffects = function(e) {
 
 window.addEventListener('load', (event) => {
     new cursoreffects.fairyDustCursor({
-    colors: ['#D60270', '#9B4F96', '#0038A8'],
-  });
-    new cursoreffects.rainbowCursor({
-    colors: ['#D60270', '#9B4F96', '#0038A8'],
-    length: '35',
-    size: '5',
-  })
+        colors: ['#D60270', '#9B4F96', '#0038A8'],
+    });
+    if (screen.width > 700) {
+        new cursoreffects.rainbowCursor({
+            colors: ['#D60270', '#9B4F96', '#0038A8'],
+            length: '35',
+            size: '5',
+        })
+    }
 });
