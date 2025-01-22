@@ -5,6 +5,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel='stylesheet' href='styles.css'>
         <link rel='icon' type='image/x-icon' href='assets/favicon.ico'>
+        <script src='scripts/background.js'></script>
     </head>  
     
     <body>
@@ -63,39 +64,34 @@
 
             <p>view this pages license <a href='LICENSE.txt' target='_blank'>here</a></p>
             
-            <input onclick="validate()" type="checkbox" name="enablebackground" id="enablebackground">
+            <input onclick='weather()' type='checkbox' name='rain_switch' id='rain_switch'>
+            <label for='rain_switch'>enable rain <i>(thanks <a href='https://mldchan.dev/' target='_blank'>mldchan</a> for inspiration and code)</i></label>
 
             <p class='anchor' id=':3'>:3</p>
         </main>
 
-        <script type="text/javascript">      
-            if (!document.cookie.includes("rain=")) {
-                document.cookie = "rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-            }
-            console.log(document.cookie)
+        <script type='text/javascript'>
+            let rain = document.getElementById('rain_switch');
 
-            if (document.cookie.includes("rain=true")) {
-                console.log("enabled");
-                document.getElementById('enablebackground').checked = true;
+            if (!document.cookie.includes('rain=')) {
+                document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+            }
+
+            if (document.cookie.includes('rain=true')) {
+                rain.checked = true;
             } else {
-                console.log("disabled");
-                document.getElementById('enablebackground').checked = false;
+                rain.checked = false;
             }
 
-
-            function validate() {
-                if (document.getElementById('enablebackground').checked) {
-                    console.log("enabled2");
-                    document.cookie = "rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
+            function weather() {
+                if (rain.checked) {
+                    document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
                 } else {
-                    console.log("disabled2");
-                    document.cookie = "rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
+                    document.cookie = 'rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
                 }
 
                 document.location.reload();
             };
         </script>
-
-        <script src='scripts/background.js'></script>
     </body>
 </html>

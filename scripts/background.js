@@ -7,6 +7,7 @@ comment. You can append anything below this statement.
 
 BISEXUAL... RAIN... BISEXUAL.... RAIN....
 */
+
 function rain() {
     var colours = ['#D60270', '#9B4F96', '#0038A8']
     var canvas = document.getElementById('background');
@@ -56,11 +57,10 @@ function rain() {
 }
 
 if (document.cookie.indexOf("rain") === -1) {
-    console.log("Its raining :3");
     document.cookie = "rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
 }
 
 if (document.cookie.indexOf("rain=true") !== -1) {
-    console.log("rain ;3");
+    console.log("its raining ;3");
     rain();
 }

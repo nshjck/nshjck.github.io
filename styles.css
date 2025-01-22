@@ -1,4 +1,9 @@
+:root {
+    color-scheme: dark;
+}
+
 * {
+    margin: 0px;
     -ms-overflow-style: none;
     scrollbar-width: none;
     image-rendering: pixelated;
@@ -13,11 +18,19 @@ main {
     max-width: 440px;
     color:plum;
     font-family: MS UI Gothic, monospace;
-    padding: 0px 6px;  
+    padding: 0 6px;  
+}
+h1 {
+    margin: 21px;
+}
+
+h3 {
+    margin: 19px 0;
 }
 
 p {
-    padding: 0px 2px;
+    padding: 0 2px;
+    margin: 16px 0;
 }
 
 .title {
@@ -26,7 +39,8 @@ p {
 
 hr {
     height: 1px;
-    border: 0px;
+    border: 0;
+    margin: 8px 0;
     background-color: #e0b0ff30;
 }
 
@@ -57,7 +71,7 @@ a:hover {
 
 fieldset {
     padding: 0 1ch 8px 1ch;
-    margin-top: 16px;
+    margin: 16px 2px 0 2px;
     border: 1px solid #e0b0ff30;
 }
 
