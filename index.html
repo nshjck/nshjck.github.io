@@ -7,13 +7,7 @@
         <link rel='icon' type='image/x-icon' href='assets/favicon.ico'>
     </head>  
     
-    <body>
-        <script>
-            if (screen.width <= 700) {
-                document.location = '../mobile';
-            }
-        </script>
-        
+    <body>       
         <script src='scripts/cursor.js'></script> 
         <canvas id='background'></canvas>
         
@@ -71,7 +65,11 @@
 
         <script type='text/javascript'>      
             if (!document.cookie.includes('rain=')) {
-                document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+                if (screen.width <= 700) {
+                    document.cookie = 'rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+                } else {
+                    document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+                }
             }
 
             if (document.cookie.includes('rain=true')) {
