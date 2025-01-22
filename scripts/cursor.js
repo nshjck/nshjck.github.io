@@ -173,7 +173,7 @@ window.addEventListener('load', (event) => {
     if (screen.width > 700) {
         new cursoreffects.rainbowCursor({
             colors: ['#D60270', '#9B4F96', '#0038A8'],
-            length: '35',
+            length: '26',
             size: '5',
         })
     }
