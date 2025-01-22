@@ -5,15 +5,14 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel='stylesheet' href='styles.css'>
         <link rel='icon' type='image/x-icon' href='assets/favicon.ico'>
-        <script src='scripts/background.js'></script>
     </head>  
     
     <body>
-        <!-- <script>
+        <script>
             if (screen.width <= 700) {
                 document.location = '../mobile';
             }
-        </script> -->
+        </script>
         
         <script src='scripts/cursor.js'></script> 
         <canvas id='background'></canvas>
@@ -64,34 +63,39 @@
 
             <p>view this pages license <a href='LICENSE.txt' target='_blank'>here</a></p>
             
-            <input onclick='weather()' type='checkbox' name='rain_switch' id='rain_switch'>
-            <label for='rain_switch'>enable rain <i>(thanks <a href='https://mldchan.dev/' target='_blank'>mldchan</a> for inspiration and code)</i></label>
+            <input onclick="validate()" type="checkbox" name="enablebackground" id="enablebackground">
 
             <p class='anchor' id=':3'>:3</p>
         </main>
 
-        <script type='text/javascript'>
-            var rain_switch = document.getElementById('rain_switch');
-
-            if (!document.cookie.includes('rain=')) {
-                document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+        <script type="text/javascript">      
+            if (!document.cookie.includes("rain=")) {
+                document.cookie = "rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             }
+            console.log(document.cookie)
 
-            if (document.cookie.includes('rain=true')) {
-                rain_switch.checked = true;
+            if (document.cookie.includes("rain=true")) {
+                console.log("enabled");
+                document.getElementById('enablebackground').checked = true;
             } else {
-                rain_switch.checked = false;
+                console.log("disabled");
+                document.getElementById('enablebackground').checked = false;
             }
 
-            function weather() {
-                if (rain_switch.checked) {
-                    document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
+
+            function validate() {
+                if (document.getElementById('enablebackground').checked) {
+                    console.log("enabled2");
+                    document.cookie = "rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
                 } else {
-                    document.cookie = 'rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
+                    console.log("disabled2");
+                    document.cookie = "rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
                 }
 
                 document.location.reload();
             };
         </script>
+
+        <script src='scripts/background.js'></script>
     </body>
 </html>
