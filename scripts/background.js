@@ -55,12 +55,11 @@ function rain() {
     }
 }
 
-if (document.cookie.indexOf("rain") === -1) {
-    console.log("Its raining :3");
-    document.cookie = "rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
+if (document.cookie.indexOf('rain') === -1) {
+    document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
 }
 
-if (document.cookie.indexOf("rain=true") !== -1) {
-    console.log("rain ;3");
+if (document.cookie.indexOf('rain=true') !== -1) {
+    console.log('rain ;3');
     rain();
 }
