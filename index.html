@@ -72,16 +72,16 @@
             if (!document.cookie.includes("bg=")) {
                 document.cookie = "bg=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             }
-        
+
             if (document.cookie.includes("bg=true")) {
                 console.log("enabled");
-                document.getElementById('enablebackground').checked = false;
+                document.getElementById('enablebackground').checked = true;
             } else {
                 console.log("disabled");
-                document.getElementById('enablebackground').checked = true;
+                document.getElementById('enablebackground').checked = false;
             }
-        
-        
+
+
             function validate() {
                 if (document.getElementById('enablebackground').checked) {
                     console.log("enabled2");
@@ -90,7 +90,7 @@
                     console.log("disabled2");
                     document.cookie = "bg=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
                 }
-            
+
                 document.location.reload();
             };
         </script>
