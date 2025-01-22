@@ -72,6 +72,7 @@
             if (!document.cookie.includes("bg=")) {
                 document.cookie = "bg=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             }
+            console.log(document.cookie)
 
             if (document.cookie.includes("bg=true")) {
                 console.log("enabled");
@@ -85,10 +86,10 @@
             function validate() {
                 if (document.getElementById('enablebackground').checked) {
                     console.log("enabled2");
-                    document.cookie = "bg=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                    document.cookie = "bg=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
                 } else {
                     console.log("disabled2");
-                    document.cookie = "bg=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                    document.cookie = "bg=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict";
                 }
 
                 document.location.reload();
