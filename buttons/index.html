@@ -5,10 +5,10 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel='stylesheet' href='../styles.css'>
         <link rel='icon' type='image/x-icon' href='../assets/favicon.ico'>
+        <script src='../scripts/cursor.js'></script> 
     </head>  
     
     <body>
-        <script src='../scripts/cursor.js'></script> 
         <canvas id='background'></canvas>
 
         <main id='main'>
@@ -61,9 +61,13 @@
 
             <p>last edited: 10-09-2024 15:03 BST</p>
 
+            <input onclick='weather()' type='checkbox' name='rain_switch' id='rain_switch'>
+            <label for='rain_switch'>enable rain <i>(thanks <a href='https://mldchan.dev/' target='_blank'>mldchan</a> for inspiration and code)</i></label>
+
             <p class='anchor' id=':3'>:3</p>
         </main>
-        
+
+        <script src='../scripts/cookies.js'></script>
         <script src='../scripts/background.js'></script>
     </body>
 </html>
