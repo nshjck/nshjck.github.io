@@ -71,20 +71,20 @@
         </main>
 
         <script type='text/javascript'>
-            var rain = document.getElementById('rain_switch');
+            var rain_switch = document.getElementById('rain_switch');
 
             if (!document.cookie.includes('rain=')) {
                 document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
             }
 
             if (document.cookie.includes('rain=true')) {
-                rain.checked = true;
+                rain_switch.checked = true;
             } else {
-                rain.checked = false;
+                rain_switch.checked = false;
             }
 
             function weather() {
-                if (rain.checked) {
+                if (rain_switch.checked) {
                     document.cookie = 'rain=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
                 } else {
                     document.cookie = 'rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
