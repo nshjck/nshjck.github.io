@@ -166,15 +166,25 @@ var cursoreffects = function(e) {
     }), e
 }({});
 
-window.addEventListener('load', (event) => {
-    new cursoreffects.fairyDustCursor({
-        colors: ['#D60270', '#9B4F96', '#0038A8'],
-    });
-    if (screen.width > 700) {
-        new cursoreffects.rainbowCursor({
+function cursor() {
+    window.addEventListener('load', (event) => {
+        new cursoreffects.fairyDustCursor({
             colors: ['#D60270', '#9B4F96', '#0038A8'],
-            length: '26',
-            size: '5',
-        })
-    }
-});
+        });
+        if (screen.width > 700) {
+            new cursoreffects.rainbowCursor({
+                colors: ['#D60270', '#9B4F96', '#0038A8'],
+                length: '26',
+                size: '5',
+            })
+        }
+    });
+};
+
+if (document.cookie.indexOf('rain') === -1) {
+    document.cookie = 'cursor=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=Strict';
+}
+
+if (document.cookie.indexOf('cursor=true') !== -1) {
+    cursor();
+}
