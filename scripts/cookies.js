@@ -1,3 +1,5 @@
+// if someone reads this please god tell me if there is a way to do this where i dont repeat myself entirely
+
 if (!document.cookie.includes('rain=')) {
     if (screen.width <= 700) {
         document.cookie = 'rain=false; expires=Fri, 31 Dec 9999 23:59:59 GMT';
