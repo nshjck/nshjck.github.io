@@ -8,13 +8,17 @@ comment. You can append anything below this statement.
 BISEXUAL... RAIN... BISEXUAL.... RAIN....
 */
 function rain() {
+    const UA = navigator.userAgent;
+
     var colours = ['#D60270', '#9B4F96', '#0038A8']
     var canvas = document.getElementById('background');
     var context = canvas.getContext('2d');
+    var stars = [];
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     context.fillStyle = 'black';
-    var stars = [];
+
     function newStar() {
         stars.push({
             x: Math.floor(Math.random()*canvas.width),
@@ -24,18 +28,29 @@ function rain() {
             return x.x < canvas.width * 2 || x.y < canvas.height * 2;
         });
     }
+
     function draw() {
         context.fillStyle = 'black';
         context.fillRect(0, 0, canvas.width, canvas.height);
         for (var index = 0; index < stars.length; index++) {
             var star = stars[index];
             star.y += 6;
+            // fixes lag on mozilla browsers
+            if (UA.includes('Mozilla')) {
+                star.y += 6;
+            }
             context.fillStyle = colours[Math.floor(Math.random()*colours.length)];
             context.fillRect(Math.round(star.x / 2) * 2, Math.round(star.y / 2) * 2, 2, 2);
         }
     }
 
-    setInterval(newStar, 8);
+    // fixes lag on mozilla based browsers
+    if (UA.includes('Mozilla')) {
+        setInterval(newStar, 4);
+    }
+    else {
+        setInterval(newStar, 8);
+    }
     document.addEventListener('resize', function() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
