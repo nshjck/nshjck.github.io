@@ -35,7 +35,7 @@ function rain() {
         for (var index = 0; index < stars.length; index++) {
             var star = stars[index];
             star.y += 6;
-            // fixes lag on mozilla browsers
+            // fixes lag on mozilla based browsers
             if (UA.includes('Mozilla')) {
                 star.y += 6;
             }
