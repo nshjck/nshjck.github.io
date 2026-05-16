@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: VCR OSD MONO;
-  src: url(fonts/BetterVCR\ 25.09.ttf);
+  font-family: BetterVCR;
+  src: url(fonts/BetterVCR.ttf);
 }
 
 * {
@@ -45,7 +45,7 @@ legend {
 }
 
 .heading {
-    font-family: VCR OSD MONO;
+    font-family: BetterVCR;
 }
 
 hr {
