@@ -3,7 +3,7 @@
 var cursoreffects = function(e) {
     'use strict';
     return e.fairyDustCursor = function(e) {
-        let t = e && e.colors || ['#D61C59', '#E7D84B', '#1B8798'],
+        let t = e && e.colors || ['#FE0000', '#FD8C00', '#FFE500', '#119F0B', '#0644B3', '#C22EDC'],
             i = e && e.element,
             n = i || document.body,
             o = window.innerWidth,
@@ -168,14 +168,11 @@ var cursoreffects = function(e) {
 
 function cursor() {
     window.addEventListener('load', (event) => {
-        new cursoreffects.fairyDustCursor({
-            colors: ['#D60270', '#9B4F96', '#0038A8'],
-        });
+        new cursoreffects.fairyDustCursor({});
         if (screen.width > 700) {
             new cursoreffects.rainbowCursor({
-                colors: ['#D60270', '#9B4F96', '#0038A8'],
-                length: '26',
-                size: '5',
+                length: '24',
+                size: '3',
             })
         }
     });

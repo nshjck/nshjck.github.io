@@ -1,3 +1,13 @@
+@font-face {
+  font-family: freepixel;
+  src: url(assets/freepixel.ttf);
+}
+
+@font-face {
+  font-family: VCR OSD MONO;
+  src: url(assets/BetterVCR\ 25.09.ttf);
+}
+
 * {
     margin: 0px;
     -ms-overflow-style: none;
@@ -12,10 +22,11 @@ body {
 main {
     margin: 0 auto;
     max-width: 440px;
-    color:plum;
-    font-family: MS UI Gothic, monospace;
+    color:#ffd319;
+    font-family: freepixel;
     padding: 0 6px;  
 }
+
 h1 {
     margin: 21px;
 }
@@ -29,15 +40,19 @@ p {
     margin: 16px 0;
 }
 
-.title {
+legend {
     margin-left: 4px;
+}
+
+.heading {
+    font-family: VCR OSD MONO;
 }
 
 hr {
     height: 1px;
     border: 0;
     margin: 8px 0;
-    background-color: #e0b0ff30;
+    background-color: #ffd31930;
 }
 
 nav a {
@@ -47,11 +62,11 @@ nav a {
 a {
     text-decoration: none;
     font-weight:bold;
-    color:#9e4ef5;
+    color:#ff901f;
 }
 
 a:hover {
-    color:#d791ff;
+    color:#f26a54;
 }
 
 input {
@@ -72,7 +87,7 @@ input {
 fieldset {
     padding: 0 1ch 8px 1ch;
     margin: 16px 2px 0 2px;
-    border: 1px solid #e0b0ff30;
+    border: 1px solid #ffd31930;
 }
 
 *::-webkit-scrollbar{ 

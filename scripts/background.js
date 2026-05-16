@@ -4,13 +4,12 @@ support new browsers. You are allowed to modify and distribute this
 script without the owner's approval, although it is necessary to keep
 this copyright intact and append modifications you made below this
 comment. You can append anything below this statement.
-
-BISEXUAL... RAIN... BISEXUAL.... RAIN....
 */
+
 function rain() {
     const UA = navigator.userAgent;
 
-    var colours = ['#D60270', '#9B4F96', '#0038A8']
+    var colours = ['#ff2974e0', '#f022ffe0', '#8b1effe0']
     var canvas = document.getElementById('background');
     var context = canvas.getContext('2d');
     var stars = [];
@@ -40,16 +39,16 @@ function rain() {
                 star.y += 6;
             }
             context.fillStyle = colours[Math.floor(Math.random()*colours.length)];
-            context.fillRect(Math.round(star.x / 2) * 2, Math.round(star.y / 2) * 2, 2, 2);
+            context.fillRect(Math.round(star.x / 2) * 2, Math.round(star.y / 2) * 2, 1, 3);
         }
     }
 
     // fixes lag on mozilla based browsers
     if (UA.includes('Mozilla')) {
-        setInterval(newStar, 4);
+        setInterval(newStar, 1);
     }
     else {
-        setInterval(newStar, 8);
+        setInterval(newStar, 2);
     }
     document.addEventListener('resize', function() {
         canvas.width = window.innerWidth;
