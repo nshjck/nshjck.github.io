@@ -1,11 +1,11 @@
 @font-face {
   font-family: freepixel;
-  src: url(assets/freepixel.ttf);
+  src: url(fonts/freepixel.ttf);
 }
 
 @font-face {
   font-family: VCR OSD MONO;
-  src: url(assets/BetterVCR\ 25.09.ttf);
+  src: url(fonts/BetterVCR\ 25.09.ttf);
 }
 
 * {
