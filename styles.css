@@ -1,10 +1,10 @@
 @font-face {
-  font-family: freepixel;
+  font-family:freepixel;
   src: url(fonts/freepixel.ttf);
 }
 
 @font-face {
-  font-family: BetterVCR;
+  font-family:BetterVCR;
   src: url(fonts/BetterVCR.ttf);
 }
 
@@ -23,7 +23,7 @@ main {
     margin: 0 auto;
     max-width: 440px;
     color:#ffd319;
-    font-family: freepixel;
+    font-family:freepixel;
     padding: 0 6px;  
 }
 
@@ -45,7 +45,7 @@ legend {
 }
 
 .heading {
-    font-family: BetterVCR;
+    font-family:BetterVCR;
 }
 
 hr {
